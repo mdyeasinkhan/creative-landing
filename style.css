@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+body{
+    margin:0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 984px;
+    margin:  auto;
+    
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+}
+h1{
+    color: #385F96;
+    font-size: 35px;
+    margin: 0;
+}
+/* Hero section */
+.hero-section{
+    display: flex;
+    padding: 80px 20px;
+    gap: 30px;
+}
+.hero-content, .hero-img{
+    flex-basis: 50%;
+}
+.hero-img{
+    text-align: right;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.hero-content h1{
+    font-size: 42px;
+    color:  #385F96;
+}
+.btn{
+    color: white;
+    background: #385F96;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 30px;
+
+
+}
+.bubble {
+    position: absolute;
+    top: -31px;
+    left: -94px;
+    z-index: -1;
+}
+.hero-content::before {
+    content: '';
+    background: #DCF4F8;
+    width: 266px;
+    height: 7px;
+    position: absolute;
+    top: 87px;
+    left: 178px;
+    z-index: -1;
+}
+/* about section  */
+
+.about-section{
+    display: flex;
+    padding: 80px 20px;
+    gap: 30px;
+}
+
+.about-content, .about-img{
+    flex-basis: 50%;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.about-content h1{
+    font-size: 35px;
+}
+
+.about-content::before{
+    content: '';
+    background:#44D1D9;
+    width: 80px;
+    height: 5px;
+}
+/* service section  */
+
+.service-section{
+    display: flex;
+    padding: 80px 20px;
+    gap: 30px;
+   
+}
+.service-content, .service-img{
+    flex-basis: 50%;
+}
+.service-img{
+    text-align: right;
+}
+.service-content{
+    
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+@media(max-width:  568px){
+    
+    .hero-content::before{
+        top: 30px!important;
+        left: 87px!important;
+    }
+    .hero-section, .about-section, .service-section{
+        flex-direction: column;
+        padding: 40px 10px;
+    }
+   
+    .hero-img, .about-img{
+        text-align: center;
+    }
+    .about-img{
+        order: 1;
+    }
+}
+footer{
+    width: 100%;
+    background: #385F96;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+footer p{
+    color: white;
+    font-size: 16px;
+
+}
